@@ -1,3 +1,5 @@
+//  Copyright © 2024 MacCleaner, LLC. All rights reserved.
+
 import SwiftUI
 
 struct ContentView: View {
@@ -24,10 +26,24 @@ struct Sidebar: View {
             NavigationLink(destination: Uninstaller()) {
                 Label("Uninstaller", systemImage: "trash.slash")
             }
-            NavigationLink(destination: SystemMonitor()) {
-                Label("System Monitor", systemImage: "waveform.path.ecg")
+            NavigationLink(destination: DeveloperTools()) {
+                Label("Developer", systemImage: "hammer")
             }
         }
         .listStyle(SidebarListStyle())
+    }
+}
+
+#Preview {
+    ContentView()
+}
+
+struct CustomButtonStyle: ButtonStyle {
+    func makeBody(configuration: Configuration) -> some View {
+        configuration.label
+            .padding(10)
+            .background(configuration.isPressed ? Color.blue.opacity(0.5) : Color.blue)
+            .foregroundColor(.white)
+            .cornerRadius(8)
     }
 }

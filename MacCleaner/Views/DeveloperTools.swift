@@ -18,7 +18,7 @@ struct DeveloperTools: View {
                     .background(Color.red)
                     .foregroundColor(.white)
                     .cornerRadius(10)
-            }
+            }.buttonStyle(CustomButtonStyle())
 
             Spacer()
         }
