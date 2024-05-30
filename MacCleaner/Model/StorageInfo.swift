@@ -1,9 +1,4 @@
-//
-//  StorageInfo.swift
-//  MacCleaner
-//
-//  Created by Vinicius Mangueira on 29/05/24.
-//
+//  Copyright © 2024 MacCleaner, LLC. All rights reserved.
 
 import Foundation
 
@@ -14,11 +9,17 @@ struct StorageInfo {
 }
 
 func getStorageInfo() -> StorageInfo? {
-    if let homeDirectory = try? FileManager.default.url(for: .userDirectory, in: .localDomainMask, appropriateFor: nil, create: false) {
+    if let homeDirectory = try? FileManager.default.url(
+        for: .userDirectory,
+        in: .localDomainMask,
+        appropriateFor: nil,
+        create: false
+    ) {
         do {
             let attributes = try FileManager.default.attributesOfFileSystem(forPath: homeDirectory.path)
             if let totalSpace = attributes[.systemSize] as? Int64,
-               let freeSpace = attributes[.systemFreeSize] as? Int64 {
+               let freeSpace = attributes[.systemFreeSize] as? Int64
+            {
                 let usedSpace = totalSpace - freeSpace
                 return StorageInfo(totalSpace: totalSpace, freeSpace: freeSpace, usedSpace: usedSpace)
             }
