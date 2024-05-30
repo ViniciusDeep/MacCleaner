@@ -1,0 +1,578 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		79D4657D2C081E050061176E /* MacCleanerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4657C2C081E050061176E /* MacCleanerApp.swift */; };
+		79D4657F2C081E050061176E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4657E2C081E050061176E /* ContentView.swift */; };
+		79D465812C081E060061176E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D465802C081E060061176E /* Assets.xcassets */; };
+		79D465842C081E060061176E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79D465832C081E060061176E /* Preview Assets.xcassets */; };
+		79D4658F2C081E070061176E /* MacCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4658E2C081E070061176E /* MacCleanerTests.swift */; };
+		79D465992C081E070061176E /* MacCleanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465982C081E070061176E /* MacCleanerUITests.swift */; };
+		79D4659B2C081E070061176E /* MacCleanerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4659A2C081E070061176E /* MacCleanerUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		79D4658B2C081E070061176E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79D465712C081E050061176E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79D465782C081E050061176E;
+			remoteInfo = MacCleaner;
+		};
+		79D465952C081E070061176E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 79D465712C081E050061176E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 79D465782C081E050061176E;
+			remoteInfo = MacCleaner;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		79D465792C081E050061176E /* MacCleaner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MacCleaner.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D4657C2C081E050061176E /* MacCleanerApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerApp.swift; sourceTree = "<group>"; };
+		79D4657E2C081E050061176E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		79D465802C081E060061176E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		79D465832C081E060061176E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		79D465852C081E060061176E /* MacCleaner.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = MacCleaner.entitlements; sourceTree = "<group>"; };
+		79D4658A2C081E070061176E /* MacCleanerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCleanerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D4658E2C081E070061176E /* MacCleanerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerTests.swift; sourceTree = "<group>"; };
+		79D465942C081E070061176E /* MacCleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCleanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		79D465982C081E070061176E /* MacCleanerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerUITests.swift; sourceTree = "<group>"; };
+		79D4659A2C081E070061176E /* MacCleanerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		79D465762C081E050061176E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D465872C081E070061176E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D465912C081E070061176E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		79D465702C081E050061176E = {
+			isa = PBXGroup;
+			children = (
+				79D4657B2C081E050061176E /* MacCleaner */,
+				79D4658D2C081E070061176E /* MacCleanerTests */,
+				79D465972C081E070061176E /* MacCleanerUITests */,
+				79D4657A2C081E050061176E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		79D4657A2C081E050061176E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				79D465792C081E050061176E /* MacCleaner.app */,
+				79D4658A2C081E070061176E /* MacCleanerTests.xctest */,
+				79D465942C081E070061176E /* MacCleanerUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		79D4657B2C081E050061176E /* MacCleaner */ = {
+			isa = PBXGroup;
+			children = (
+				79D4657C2C081E050061176E /* MacCleanerApp.swift */,
+				79D4657E2C081E050061176E /* ContentView.swift */,
+				79D465802C081E060061176E /* Assets.xcassets */,
+				79D465852C081E060061176E /* MacCleaner.entitlements */,
+				79D465822C081E060061176E /* Preview Content */,
+			);
+			path = MacCleaner;
+			sourceTree = "<group>";
+		};
+		79D465822C081E060061176E /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				79D465832C081E060061176E /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		79D4658D2C081E070061176E /* MacCleanerTests */ = {
+			isa = PBXGroup;
+			children = (
+				79D4658E2C081E070061176E /* MacCleanerTests.swift */,
+			);
+			path = MacCleanerTests;
+			sourceTree = "<group>";
+		};
+		79D465972C081E070061176E /* MacCleanerUITests */ = {
+			isa = PBXGroup;
+			children = (
+				79D465982C081E070061176E /* MacCleanerUITests.swift */,
+				79D4659A2C081E070061176E /* MacCleanerUITestsLaunchTests.swift */,
+			);
+			path = MacCleanerUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		79D465782C081E050061176E /* MacCleaner */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D4659E2C081E070061176E /* Build configuration list for PBXNativeTarget "MacCleaner" */;
+			buildPhases = (
+				79D465752C081E050061176E /* Sources */,
+				79D465762C081E050061176E /* Frameworks */,
+				79D465772C081E050061176E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MacCleaner;
+			productName = MacCleaner;
+			productReference = 79D465792C081E050061176E /* MacCleaner.app */;
+			productType = "com.apple.product-type.application";
+		};
+		79D465892C081E070061176E /* MacCleanerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D465A12C081E070061176E /* Build configuration list for PBXNativeTarget "MacCleanerTests" */;
+			buildPhases = (
+				79D465862C081E070061176E /* Sources */,
+				79D465872C081E070061176E /* Frameworks */,
+				79D465882C081E070061176E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79D4658C2C081E070061176E /* PBXTargetDependency */,
+			);
+			name = MacCleanerTests;
+			productName = MacCleanerTests;
+			productReference = 79D4658A2C081E070061176E /* MacCleanerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		79D465932C081E070061176E /* MacCleanerUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 79D465A42C081E070061176E /* Build configuration list for PBXNativeTarget "MacCleanerUITests" */;
+			buildPhases = (
+				79D465902C081E070061176E /* Sources */,
+				79D465912C081E070061176E /* Frameworks */,
+				79D465922C081E070061176E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				79D465962C081E070061176E /* PBXTargetDependency */,
+			);
+			name = MacCleanerUITests;
+			productName = MacCleanerUITests;
+			productReference = 79D465942C081E070061176E /* MacCleanerUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		79D465712C081E050061176E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1520;
+				LastUpgradeCheck = 1520;
+				TargetAttributes = {
+					79D465782C081E050061176E = {
+						CreatedOnToolsVersion = 15.2;
+					};
+					79D465892C081E070061176E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 79D465782C081E050061176E;
+					};
+					79D465932C081E070061176E = {
+						CreatedOnToolsVersion = 15.2;
+						TestTargetID = 79D465782C081E050061176E;
+					};
+				};
+			};
+			buildConfigurationList = 79D465742C081E050061176E /* Build configuration list for PBXProject "MacCleaner" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 79D465702C081E050061176E;
+			productRefGroup = 79D4657A2C081E050061176E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				79D465782C081E050061176E /* MacCleaner */,
+				79D465892C081E070061176E /* MacCleanerTests */,
+				79D465932C081E070061176E /* MacCleanerUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		79D465772C081E050061176E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D465842C081E060061176E /* Preview Assets.xcassets in Resources */,
+				79D465812C081E060061176E /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D465882C081E070061176E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D465922C081E070061176E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		79D465752C081E050061176E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D4657F2C081E050061176E /* ContentView.swift in Sources */,
+				79D4657D2C081E050061176E /* MacCleanerApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D465862C081E070061176E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D4658F2C081E070061176E /* MacCleanerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		79D465902C081E070061176E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				79D465992C081E070061176E /* MacCleanerUITests.swift in Sources */,
+				79D4659B2C081E070061176E /* MacCleanerUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		79D4658C2C081E070061176E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79D465782C081E050061176E /* MacCleaner */;
+			targetProxy = 79D4658B2C081E070061176E /* PBXContainerItemProxy */;
+		};
+		79D465962C081E070061176E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 79D465782C081E050061176E /* MacCleaner */;
+			targetProxy = 79D465952C081E070061176E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		79D4659C2C081E070061176E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		79D4659D2C081E070061176E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+			};
+			name = Release;
+		};
+		79D4659F2C081E070061176E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacCleaner/MacCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacCleaner/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacCleaner.MacCleaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		79D465A02C081E070061176E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = MacCleaner/MacCleaner.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"MacCleaner/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacCleaner.MacCleaner;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		79D465A22C081E070061176E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacCleaner.MacCleanerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacCleaner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacCleaner";
+			};
+			name = Debug;
+		};
+		79D465A32C081E070061176E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.2;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacCleaner.MacCleanerTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MacCleaner.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MacCleaner";
+			};
+			name = Release;
+		};
+		79D465A52C081E070061176E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacCleaner.MacCleanerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacCleaner;
+			};
+			name = Debug;
+		};
+		79D465A62C081E070061176E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MacCleaner.MacCleanerUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = MacCleaner;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		79D465742C081E050061176E /* Build configuration list for PBXProject "MacCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D4659C2C081E070061176E /* Debug */,
+				79D4659D2C081E070061176E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D4659E2C081E070061176E /* Build configuration list for PBXNativeTarget "MacCleaner" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D4659F2C081E070061176E /* Debug */,
+				79D465A02C081E070061176E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D465A12C081E070061176E /* Build configuration list for PBXNativeTarget "MacCleanerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D465A22C081E070061176E /* Debug */,
+				79D465A32C081E070061176E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		79D465A42C081E070061176E /* Build configuration list for PBXNativeTarget "MacCleanerUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				79D465A52C081E070061176E /* Debug */,
+				79D465A62C081E070061176E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 79D465712C081E050061176E /* Project object */;
+}
