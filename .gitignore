@@ -1,0 +1,36 @@
+# Xcode
+.DS_Store
+*/.DS_Store
+*.xcuserstate
+*.xcworkspace
+xcuserdata/
+
+# Build products
+/build/
+DerivedData/
+*.build/
+
+# Dependency directories
+Pods/
+Carthage/Build/
+
+# Swift Package Manager
+.build/
+
+# IDE files
+*.swiftpm
+.idea/
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspective
+*.perspectivev3
+
+# macOS specific files
+.DS_Store
+profile
+
+# Miscellaneous
+*.log
+*.xccheckout
+
