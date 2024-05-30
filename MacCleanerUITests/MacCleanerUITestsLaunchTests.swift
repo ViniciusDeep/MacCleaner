@@ -1,14 +1,8 @@
-//
-//  MacCleanerUITestsLaunchTests.swift
-//  MacCleanerUITests
-//
-//  Created by Vinicius Mangueira on 29/05/24.
-//
+//  Copyright © 2024 MacCleaner, LLC. All rights reserved.
 
 import XCTest
 
 final class MacCleanerUITestsLaunchTests: XCTestCase {
-
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
         true
     }

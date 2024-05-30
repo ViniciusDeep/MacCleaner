@@ -14,6 +14,15 @@
 		79D4658F2C081E070061176E /* MacCleanerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4658E2C081E070061176E /* MacCleanerTests.swift */; };
 		79D465992C081E070061176E /* MacCleanerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465982C081E070061176E /* MacCleanerUITests.swift */; };
 		79D4659B2C081E070061176E /* MacCleanerUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D4659A2C081E070061176E /* MacCleanerUITestsLaunchTests.swift */; };
+		79D465A92C081E4E0061176E /* SystemCleanup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465A82C081E4E0061176E /* SystemCleanup.swift */; };
+		79D465AC2C081E760061176E /* LargeFilesFinder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465AB2C081E760061176E /* LargeFilesFinder.swift */; };
+		79D465AE2C081E900061176E /* Uninstaller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465AD2C081E900061176E /* Uninstaller.swift */; };
+		79D465B02C081E9F0061176E /* DeveloperTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465AF2C081E9F0061176E /* DeveloperTools.swift */; };
+		79D465B32C081F320061176E /* StorageInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465B22C081F320061176E /* StorageInfo.swift */; };
+		79D465B52C081F560061176E /* Dashboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465B42C081F560061176E /* Dashboard.swift */; };
+		79D465B72C0821510061176E /* SystemCleanUp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465B62C0821510061176E /* SystemCleanUp.swift */; };
+		79D465B92C0822F40061176E /* FileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465B82C0822F40061176E /* FileInfo.swift */; };
+		79D465BB2C0826820061176E /* SystemMonitorHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79D465BA2C0826820061176E /* SystemMonitorHelper.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +54,15 @@
 		79D465942C081E070061176E /* MacCleanerUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MacCleanerUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		79D465982C081E070061176E /* MacCleanerUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerUITests.swift; sourceTree = "<group>"; };
 		79D4659A2C081E070061176E /* MacCleanerUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MacCleanerUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		79D465A82C081E4E0061176E /* SystemCleanup.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemCleanup.swift; sourceTree = "<group>"; };
+		79D465AB2C081E760061176E /* LargeFilesFinder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeFilesFinder.swift; sourceTree = "<group>"; };
+		79D465AD2C081E900061176E /* Uninstaller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Uninstaller.swift; sourceTree = "<group>"; };
+		79D465AF2C081E9F0061176E /* DeveloperTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeveloperTools.swift; sourceTree = "<group>"; };
+		79D465B22C081F320061176E /* StorageInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageInfo.swift; sourceTree = "<group>"; };
+		79D465B42C081F560061176E /* Dashboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dashboard.swift; sourceTree = "<group>"; };
+		79D465B62C0821510061176E /* SystemCleanUp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemCleanUp.swift; sourceTree = "<group>"; };
+		79D465B82C0822F40061176E /* FileInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileInfo.swift; sourceTree = "<group>"; };
+		79D465BA2C0826820061176E /* SystemMonitorHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemMonitorHelper.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +113,9 @@
 		79D4657B2C081E050061176E /* MacCleaner */ = {
 			isa = PBXGroup;
 			children = (
+				79D465B12C081F230061176E /* Model */,
+				79D465A72C081E3C0061176E /* Views */,
 				79D4657C2C081E050061176E /* MacCleanerApp.swift */,
-				79D4657E2C081E050061176E /* ContentView.swift */,
 				79D465802C081E060061176E /* Assets.xcassets */,
 				79D465852C081E060061176E /* MacCleaner.entitlements */,
 				79D465822C081E060061176E /* Preview Content */,
@@ -127,6 +146,38 @@
 				79D4659A2C081E070061176E /* MacCleanerUITestsLaunchTests.swift */,
 			);
 			path = MacCleanerUITests;
+			sourceTree = "<group>";
+		};
+		79D465A72C081E3C0061176E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79D465AA2C081E670061176E /* ContentView */,
+				79D465A82C081E4E0061176E /* SystemCleanup.swift */,
+				79D465AB2C081E760061176E /* LargeFilesFinder.swift */,
+				79D465AD2C081E900061176E /* Uninstaller.swift */,
+				79D465AF2C081E9F0061176E /* DeveloperTools.swift */,
+				79D465B42C081F560061176E /* Dashboard.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		79D465AA2C081E670061176E /* ContentView */ = {
+			isa = PBXGroup;
+			children = (
+				79D4657E2C081E050061176E /* ContentView.swift */,
+			);
+			path = ContentView;
+			sourceTree = "<group>";
+		};
+		79D465B12C081F230061176E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				79D465B22C081F320061176E /* StorageInfo.swift */,
+				79D465B62C0821510061176E /* SystemCleanUp.swift */,
+				79D465B82C0822F40061176E /* FileInfo.swift */,
+				79D465BA2C0826820061176E /* SystemMonitorHelper.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +310,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79D465B72C0821510061176E /* SystemCleanUp.swift in Sources */,
 				79D4657F2C081E050061176E /* ContentView.swift in Sources */,
+				79D465B32C081F320061176E /* StorageInfo.swift in Sources */,
+				79D465B52C081F560061176E /* Dashboard.swift in Sources */,
 				79D4657D2C081E050061176E /* MacCleanerApp.swift in Sources */,
+				79D465A92C081E4E0061176E /* SystemCleanup.swift in Sources */,
+				79D465B02C081E9F0061176E /* DeveloperTools.swift in Sources */,
+				79D465AE2C081E900061176E /* Uninstaller.swift in Sources */,
+				79D465AC2C081E760061176E /* LargeFilesFinder.swift in Sources */,
+				79D465B92C0822F40061176E /* FileInfo.swift in Sources */,
+				79D465BB2C0826820061176E /* SystemMonitorHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,9 +1,4 @@
-//
-//  MacCleanerApp.swift
-//  MacCleaner
-//
-//  Created by Vinicius Mangueira on 29/05/24.
-//
+//  Copyright © 2024 MacCleaner, LLC. All rights reserved.
 
 import SwiftUI
 
