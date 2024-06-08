@@ -38,12 +38,4 @@ struct Sidebar: View {
     ContentView()
 }
 
-struct CustomButtonStyle: ButtonStyle {
-    func makeBody(configuration: Configuration) -> some View {
-        configuration.label
-            .padding(10)
-            .background(configuration.isPressed ? Color.blue.opacity(0.5) : Color.blue)
-            .foregroundColor(.white)
-            .cornerRadius(8)
-    }
-}
+
