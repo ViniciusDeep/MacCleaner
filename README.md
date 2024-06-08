@@ -51,6 +51,7 @@ To install MacCleaner, follow these steps:
 - Add more cleanup options
 - Provide multi-language support
 - Make code reusable in some parts
+- CI
 
 ## License
 
