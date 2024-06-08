@@ -7,36 +7,53 @@ struct FileDetail: Identifiable {
     let name: String
     let size: Int64
     let modificationDate: Date
+    let path: String
 }
 
+
 func findLargeAndOldFiles(in directory: String, largerThan size: Int64, olderThan days: Int) -> [FileDetail] {
-    var results = [FileDetail]()
     let fileManager = FileManager.default
-    let calendar = Calendar.current
-    let dateThreshold = calendar.date(byAdding: .day, value: -days, to: Date())!
+    let keys: [URLResourceKey] = [.nameKey, .isRegularFileKey, .fileSizeKey, .contentModificationDateKey]
+    let url = URL(fileURLWithPath: directory)
 
-    do {
-        let urls = try fileManager.contentsOfDirectory(
-            at: URL(fileURLWithPath: directory),
-            includingPropertiesForKeys: [.fileSizeKey, .contentModificationDateKey],
-            options: .skipsHiddenFiles
-        )
+    guard let enumerator = fileManager.enumerator(at: url, includingPropertiesForKeys: keys) else {
+        print("Failed to create enumerator for directory: \(directory)")
+        return []
+    }
 
-        for url in urls {
-            let resourceValues = try url.resourceValues(forKeys: [.fileSizeKey, .contentModificationDateKey])
-            if let fileSize = resourceValues.fileSize, let modificationDate = resourceValues.contentModificationDate {
-                if fileSize > size, modificationDate < dateThreshold {
-                    results.append(FileDetail(
-                        name: url.lastPathComponent,
-                        size: Int64(fileSize),
-                        modificationDate: modificationDate
-                    ))
-                }
+    var results: [FileDetail] = []
+
+    for case let fileURL as URL in enumerator {
+        do {
+            let resourceValues = try fileURL.resourceValues(forKeys: Set(keys))
+
+            guard let isRegularFile = resourceValues.isRegularFile, isRegularFile,
+                  let fileSize = resourceValues.fileSize,
+                  let modificationDate = resourceValues.contentModificationDate else {
+                print("Skipping file: \(fileURL.path)")
+                continue
             }
+
+            let age = Calendar.current.dateComponents([.day], from: modificationDate, to: Date()).day ?? 0
+
+            print("Found file: \(fileURL.path), Size: \(fileSize), Age: \(age) days")
+
+            if fileSize > size && age > days {
+                let fileDetail = FileDetail(
+                    name: resourceValues.name ?? fileURL.lastPathComponent,
+                    size: Int64(fileSize),
+                    modificationDate: modificationDate,
+                    path: fileURL.path
+                )
+                results.append(fileDetail)
+            }
+        } catch {
+            print("Error reading file attributes: \(error.localizedDescription)")
         }
-    } catch {
-        print("Error while enumerating files \(directory): \(error.localizedDescription)")
     }
 
     return results
 }
+
+
+
